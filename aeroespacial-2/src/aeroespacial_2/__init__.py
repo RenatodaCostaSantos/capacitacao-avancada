@@ -1,0 +1,4 @@
+"""aeroespacial_2
+"""
+
+__version__ = "0.1"
