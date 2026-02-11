@@ -1,47 +1,28 @@
 from pathlib import Path
-import os
-import sys
 import zipfile
-import requests
+import os
 
-# 1) Onde salvar
-DATA_DIR = Path("data/alfa")
-DATA_DIR.mkdir(parents=True, exist_ok=True)
+# 1) Configuração de caminhos baseada no seu upload
+DATA_DIR = Path("data")
+ZIP_NAME = "processed-20260211T020118Z-1-001.zip"
+ZIP_PATH = DATA_DIR / ZIP_NAME
 
-# 2) URL do ZIP do ALFA (Substituído com o link direto)
-ALFA_ZIP_URL = "https://www.eecis.udel.edu/~trn/alfa/alfa_dataset.zip"
+# Onde os dados serão descompactados
+EXTRACT_DIR = DATA_DIR / "alfa" / "unzipped"
 
-if not ALFA_ZIP_URL:
-    print("\nERRO: Link de download não encontrado.\n")
-    sys.exit(1)
+def extrair_dados():
+    # Verifica se o arquivo que você subiu está no lugar certo
+    if ZIP_PATH.exists():
+        print(f"Arquivo {ZIP_NAME} encontrado!")
+        EXTRACT_DIR.mkdir(parents=True, exist_ok=True)
+        
+        print(f"Extraindo arquivos para: {EXTRACT_DIR}...")
+        with zipfile.ZipFile(ZIP_PATH, "r") as z:
+            z.extractall(EXTRACT_DIR)
+        print("✅ Concluído! O dataset foi extraído com sucesso.")
+    else:
+        print(f"❌ Erro: O arquivo {ZIP_NAME} não foi encontrado na pasta data.")
+        print(f"Caminho verificado: {ZIP_PATH.absolute()}")
 
-zip_path = DATA_DIR / "alfa_dataset.zip"
-
-print(f"Baixando para: {zip_path}")
-try:
-    with requests.get(ALFA_ZIP_URL, stream=True, timeout=60) as r:
-        r.raise_for_status()
-        total = int(r.headers.get("content-length", 0))
-        downloaded = 0
-        with open(zip_path, "wb") as f:
-            for chunk in r.iter_content(chunk_size=1024 * 1024):
-                if chunk:
-                    f.write(chunk)
-                    downloaded += len(chunk)
-                    if total:
-                        pct = 100 * downloaded / total
-                        print(f"\r{pct:5.1f}% ({downloaded/1e6:.1f} MB)", end="")
-    print("\nDownload concluído.")
-except Exception as e:
-    print(f"\nErro durante o download: {e}")
-    sys.exit(1)
-
-extract_dir = DATA_DIR / "unzipped"
-extract_dir.mkdir(parents=True, exist_ok=True)
-
-print(f"Extraindo em: {extract_dir}")
-with zipfile.ZipFile(zip_path, "r") as z:
-    z.extractall(extract_dir)
-
-print("OK! Dataset extraído.")
-print("Evitar fazer o commit da pasta data/. Ela é grande.")
+if __name__ == "__main__":
+    extrair_dados()
