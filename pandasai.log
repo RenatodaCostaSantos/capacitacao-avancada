@@ -1,0 +1,5156 @@
+2026-02-11 09:09:17 [INFO] Question: quantas linha tem meu arquivo 
+2026-02-11 09:09:17 [INFO] Running PandasAI with openai LLM...
+2026-02-11 09:09:17 [INFO] Prompt ID: a6133b5e-c548-42c6-a1c0-22f86355ad5e
+2026-02-11 09:09:17 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 09:09:17 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 09:09:17 [INFO] Executing Step 1: CacheLookup
+2026-02-11 09:09:17 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 09:09:17 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 544
+  columns: 19
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943872642136456
+      - 1531943902114399540
+      - 1531943840741108658
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1247
+      - 1224
+      - 1146
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943927538214072
+      - 1531943912301484740
+      - 1531943896610021084
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.status.status
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.status.service
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.latitude
+      type: float64
+      samples:
+      - 40.5907658
+      - 40.5926908
+      - 40.5924398
+    - name: field.longitude
+      type: float64
+      samples:
+      - -79.8984502
+      - -79.8983316
+      - -79.8993918
+    - name: field.altitude
+      type: float64
+      samples:
+      - 364.892020328
+      - 361.021921012
+      - 360.165750743
+    - name: field.position_covariance0
+      type: object
+      samples:
+      - '1352741774'
+      - '7697797789'
+      - '2404669455'
+    - name: field.position_covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance4
+      type: object
+      samples:
+      - '1475647758'
+      - '4243739479'
+      - '3660636615'
+    - name: field.position_covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance8
+      type: object
+      samples:
+      - 0656729616
+      - 0065977941
+      - '1794196004'
+    - name: field.position_covariance_type
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ quantas linha tem meu arquivo 
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 09:09:17 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 09:09:18 [INFO] Retrying request to /chat/completions in 0.493714 seconds
+2026-02-11 09:09:19 [INFO] Retrying request to /chat/completions in 0.994888 seconds
+2026-02-11 09:09:20 [ERROR] Pipeline failed on step 3: Connection error.
+2026-02-11 09:24:57 [INFO] Question: quantas linha tem meu arquivo 
+2026-02-11 09:24:57 [INFO] Running PandasAI with openai LLM...
+2026-02-11 09:24:57 [INFO] Prompt ID: 33fcb86a-ed03-404e-9943-6b978e305d0f
+2026-02-11 09:24:57 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 09:24:57 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 09:24:57 [INFO] Executing Step 1: CacheLookup
+2026-02-11 09:24:57 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 09:24:57 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 544
+  columns: 19
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943823602596300
+      - 1531943925338934512
+      - 1531943837035550933
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1403
+      - 1074
+      - 1028
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943893222914952
+      - 1531943826804055403
+      - 1531943838014799088
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.status.status
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.status.service
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.latitude
+      type: float64
+      samples:
+      - 40.590582
+      - 40.5927452
+      - 40.5906162
+    - name: field.longitude
+      type: float64
+      samples:
+      - -79.8960651
+      - -79.899513
+      - -79.9007931
+    - name: field.altitude
+      type: float64
+      samples:
+      - 360.653374764
+      - 360.385231407
+      - 360.205709024
+    - name: field.position_covariance0
+      type: object
+      samples:
+      - '2812681209'
+      - '2217360028'
+      - '6676582184'
+    - name: field.position_covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance4
+      type: object
+      samples:
+      - '7131504034'
+      - '7568965678'
+      - '1244255858'
+    - name: field.position_covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance8
+      type: object
+      samples:
+      - '1795432205'
+      - '8445353387'
+      - '8837263390'
+    - name: field.position_covariance_type
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ quantas linha tem meu arquivo 
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 09:24:57 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 09:24:57 [INFO] Retrying request to /chat/completions in 0.432891 seconds
+2026-02-11 09:24:58 [INFO] Retrying request to /chat/completions in 0.853609 seconds
+2026-02-11 09:24:59 [ERROR] Pipeline failed on step 3: Connection error.
+2026-02-11 09:27:35 [INFO] Question: vfvfvf
+2026-02-11 09:27:35 [INFO] Running PandasAI with openai LLM...
+2026-02-11 09:27:35 [INFO] Prompt ID: 99fd8b5f-0143-4bc1-ac2a-a6f7fa7bc67c
+2026-02-11 09:27:35 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 09:27:35 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 09:27:35 [INFO] Executing Step 1: CacheLookup
+2026-02-11 09:27:35 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 09:27:35 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 544
+  columns: 19
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943939081630580
+      - 1531943816828972994
+      - 1531943826073583761
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1119
+      - 1112
+      - 1045
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943924091318825
+      - 1531943901873591163
+      - 1531943843642838759
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.status.status
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.status.service
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.latitude
+      type: float64
+      samples:
+      - 40.5910147
+      - 40.5925605
+      - 40.5908787
+    - name: field.longitude
+      type: float64
+      samples:
+      - -79.8960193
+      - -79.8984215
+      - -79.8961179
+    - name: field.altitude
+      type: float64
+      samples:
+      - 358.965027854
+      - 359.061980133
+      - 360.660864824
+    - name: field.position_covariance0
+      type: object
+      samples:
+      - '6888023257'
+      - '1864363214'
+      - '2257631727'
+    - name: field.position_covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance4
+      type: object
+      samples:
+      - '4628926138'
+      - '7033902636'
+      - '2497916669'
+    - name: field.position_covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance8
+      type: object
+      samples:
+      - '2859310505'
+      - '9869157376'
+      - '8344012712'
+    - name: field.position_covariance_type
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ vfvfvf
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 09:27:35 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 09:27:36 [INFO] Retrying request to /chat/completions in 0.399910 seconds
+2026-02-11 09:27:36 [INFO] Retrying request to /chat/completions in 0.923422 seconds
+2026-02-11 09:27:37 [ERROR] Pipeline failed on step 3: Connection error.
+2026-02-11 09:30:23 [INFO] Question: cscdcdc
+2026-02-11 09:30:23 [INFO] Running PandasAI with openai LLM...
+2026-02-11 09:30:23 [INFO] Prompt ID: e9f7aa8f-697f-470a-8c96-6c41e61e3690
+2026-02-11 09:30:23 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 09:30:23 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 09:30:23 [INFO] Executing Step 1: CacheLookup
+2026-02-11 09:30:23 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 09:30:23 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 544
+  columns: 90
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943847286456677
+      - 1531943833730289893
+      - 1531943836582776867
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1537
+      - 1131
+      - 1376
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943859558172371
+      - 1531943816820825993
+      - 1531943826070323609
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - map
+      - map
+      - map
+    - name: field.child_frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.pose.pose.position.x
+      type: object
+      samples:
+      - '5437120012'
+      - '2495917753'
+      - '8354384125'
+    - name: field.pose.pose.position.y
+      type: object
+      samples:
+      - '6120879990'
+      - '8999703937'
+      - '5687853956'
+    - name: field.pose.pose.position.z
+      type: float64
+      samples:
+      - 51.042
+      - 51.387
+      - 50.8
+    - name: field.pose.pose.orientation.x
+      type: object
+      samples:
+      - '9822289234'
+      - '1332483069'
+      - '1761466742'
+    - name: field.pose.pose.orientation.y
+      type: object
+      samples:
+      - '8507549235'
+      - '9666156673'
+      - '4208757176'
+    - name: field.pose.pose.orientation.z
+      type: object
+      samples:
+      - '3592806743'
+      - '9714424339'
+      - '2962540641'
+    - name: field.pose.pose.orientation.w
+      type: object
+      samples:
+      - '6106363159'
+      - '5887976765'
+      - '1180673834'
+    - name: field.pose.covariance0
+      type: object
+      samples:
+      - '6059568034'
+      - '3508096057'
+      - '6434799621'
+    - name: field.pose.covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance4
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance7
+      type: object
+      samples:
+      - '2152256208'
+      - '2213008289'
+      - '5415883420'
+    - name: field.pose.covariance8
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance9
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance10
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance11
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance12
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance13
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance14
+      type: object
+      samples:
+      - '4460972060'
+      - 0293093277
+      - '6507114241'
+    - name: field.pose.covariance15
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance16
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance17
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance18
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance19
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance20
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance21
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.pose.covariance22
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance23
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance24
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance25
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance26
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance27
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance28
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.pose.covariance29
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance30
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance31
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance32
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance33
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance34
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance35
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.twist.twist.linear.x
+      type: float64
+      samples:
+      - 0.06
+      - -17.47
+      - -0.07
+    - name: field.twist.twist.linear.y
+      type: float64
+      samples:
+      - -2.79
+      - 7.65
+      - 18.03
+    - name: field.twist.twist.linear.z
+      type: float64
+      samples:
+      - -1.5
+      - -2.52
+      - 0.69
+    - name: field.twist.twist.angular.x
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.twist.angular.y
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.twist.angular.z
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance0
+      type: float64
+      samples:
+      - -1.0
+      - -1.0
+      - -1.0
+    - name: field.twist.covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance4
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance8
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance9
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance10
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance11
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance12
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance13
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance14
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance15
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance16
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance17
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance18
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance19
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance20
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance21
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance22
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance23
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance24
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance25
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance26
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance27
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance28
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance29
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance30
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance31
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance32
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance33
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance34
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance35
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ cscdcdc
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 09:30:23 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 09:30:23 [INFO] Retrying request to /chat/completions in 0.447731 seconds
+2026-02-11 09:30:24 [INFO] Retrying request to /chat/completions in 0.875055 seconds
+2026-02-11 09:30:25 [ERROR] Pipeline failed on step 3: Connection error.
+2026-02-11 14:57:37 [INFO] Question: jnadcjdc
+2026-02-11 14:57:37 [INFO] Running PandasAI with openai LLM...
+2026-02-11 14:57:37 [INFO] Prompt ID: 456888f1-632c-4530-9503-178000e3fe18
+2026-02-11 14:57:37 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 14:57:37 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 14:57:37 [INFO] Executing Step 1: CacheLookup
+2026-02-11 14:57:37 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 14:57:37 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 544
+  columns: 90
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943815872215057
+      - 1531943857103904167
+      - 1531943865469262626
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1433
+      - 1221
+      - 1333
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943842650316400
+      - 1531943856353408522
+      - 1531943832788958524
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - map
+      - map
+      - map
+    - name: field.child_frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.pose.pose.position.x
+      type: object
+      samples:
+      - '4539654204'
+      - '5681805509'
+      - '5895121203'
+    - name: field.pose.pose.position.y
+      type: float64
+      samples:
+      - 183.81693234
+      - 31.0301429065
+      - 104.802315889
+    - name: field.pose.pose.position.z
+      type: float64
+      samples:
+      - 48.91
+      - 50.667
+      - 50.845
+    - name: field.pose.pose.orientation.x
+      type: object
+      samples:
+      - '8541888154'
+      - '7351464952'
+      - '9517152472'
+    - name: field.pose.pose.orientation.y
+      type: float64
+      samples:
+      - -0.00473810455389
+      - -0.180524962549
+      - -0.0295652413313
+    - name: field.pose.pose.orientation.z
+      type: object
+      samples:
+      - '4106744356'
+      - '7682923364'
+      - 0425307069
+    - name: field.pose.pose.orientation.w
+      type: object
+      samples:
+      - '1541500474'
+      - '2230614390'
+      - 0189427425
+    - name: field.pose.covariance0
+      type: object
+      samples:
+      - '6462533499'
+      - '2748093809'
+      - '9592003208'
+    - name: field.pose.covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance4
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance7
+      type: object
+      samples:
+      - 0690959355
+      - '7043079448'
+      - '1033082827'
+    - name: field.pose.covariance8
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance9
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance10
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance11
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance12
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance13
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance14
+      type: object
+      samples:
+      - '5136865681'
+      - '6559408767'
+      - '6489476632'
+    - name: field.pose.covariance15
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance16
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance17
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance18
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance19
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance20
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance21
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.pose.covariance22
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance23
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance24
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance25
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance26
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance27
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance28
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.pose.covariance29
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance30
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance31
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance32
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance33
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance34
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance35
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.twist.twist.linear.x
+      type: float64
+      samples:
+      - -14.04
+      - -18.92
+      - 10.01
+    - name: field.twist.twist.linear.y
+      type: float64
+      samples:
+      - -11.34
+      - 0.29
+      - 2.15
+    - name: field.twist.twist.linear.z
+      type: float64
+      samples:
+      - 0.15
+      - 1.06
+      - 0.34
+    - name: field.twist.twist.angular.x
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.twist.angular.y
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.twist.angular.z
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance0
+      type: float64
+      samples:
+      - -1.0
+      - -1.0
+      - -1.0
+    - name: field.twist.covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance4
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance8
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance9
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance10
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance11
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance12
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance13
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance14
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance15
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance16
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance17
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance18
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance19
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance20
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance21
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance22
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance23
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance24
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance25
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance26
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance27
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance28
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance29
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance30
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance31
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance32
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance33
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance34
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance35
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ jnadcjdc
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 14:57:37 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 14:57:38 [INFO] Retrying request to /chat/completions in 0.462810 seconds
+2026-02-11 14:57:39 [INFO] Retrying request to /chat/completions in 0.927179 seconds
+2026-02-11 14:57:40 [ERROR] Pipeline failed on step 3: Connection error.
+2026-02-11 15:21:30 [INFO] Question: oi
+2026-02-11 15:21:30 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:21:30 [INFO] Prompt ID: 2f17ada3-4d59-414d-945b-8efc7bafe512
+2026-02-11 15:21:30 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:21:30 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:21:30 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:21:30 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:21:31 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 544
+  columns: 90
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943887498538480
+      - 1531943902114434643
+      - 1531943889237899537
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1050
+      - 1227
+      - 1369
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943933210297904
+      - 1531943869924156782
+      - 1531943866693344480
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - map
+      - map
+      - map
+    - name: field.child_frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.pose.pose.position.x
+      type: float64
+      samples:
+      - 173.075002156
+      - -166.336833376
+      - -37.5108575339
+    - name: field.pose.pose.position.y
+      type: float64
+      samples:
+      - 206.701651129
+      - -44.3078183362
+      - 172.743167138
+    - name: field.pose.pose.position.z
+      type: float64
+      samples:
+      - 50.671
+      - 52.699
+      - 50.653
+    - name: field.pose.pose.orientation.x
+      type: object
+      samples:
+      - '9226527619'
+      - 0251220798
+      - '5995221436'
+    - name: field.pose.pose.orientation.y
+      type: object
+      samples:
+      - 0657809076
+      - '5253323419'
+      - '9696445389'
+    - name: field.pose.pose.orientation.z
+      type: object
+      samples:
+      - '8767158766'
+      - '3177354298'
+      - '2403356040'
+    - name: field.pose.pose.orientation.w
+      type: object
+      samples:
+      - 0945753013
+      - '9470603274'
+      - '2474228822'
+    - name: field.pose.covariance0
+      type: object
+      samples:
+      - '2682212594'
+      - '3673250563'
+      - '1747738606'
+    - name: field.pose.covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance4
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance7
+      type: object
+      samples:
+      - '7785987330'
+      - '1690763927'
+      - '9598783242'
+    - name: field.pose.covariance8
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance9
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance10
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance11
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance12
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance13
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance14
+      type: object
+      samples:
+      - '7718967682'
+      - '4700474936'
+      - '3646735596'
+    - name: field.pose.covariance15
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance16
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance17
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance18
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance19
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance20
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance21
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.pose.covariance22
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance23
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance24
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance25
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance26
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance27
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance28
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.pose.covariance29
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance30
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance31
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance32
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance33
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance34
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance35
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.twist.twist.linear.x
+      type: float64
+      samples:
+      - 13.7
+      - 13.52
+      - 2.01
+    - name: field.twist.twist.linear.y
+      type: float64
+      samples:
+      - 16.57
+      - -15.41
+      - 18.24
+    - name: field.twist.twist.linear.z
+      type: float64
+      samples:
+      - -0.08
+      - -0.54
+      - 0.48
+    - name: field.twist.twist.angular.x
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.twist.angular.y
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.twist.angular.z
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance0
+      type: float64
+      samples:
+      - -1.0
+      - -1.0
+      - -1.0
+    - name: field.twist.covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance4
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance8
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance9
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance10
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance11
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance12
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance13
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance14
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance15
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance16
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance17
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance18
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance19
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance20
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance21
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance22
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance23
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance24
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance25
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance26
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance27
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance28
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance29
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance30
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance31
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance32
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance33
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance34
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance35
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ oi
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:21:31 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:21:32 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)'))': /v1/chat/completions
+2026-02-11 15:21:33 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)'))': /v1/chat/completions
+2026-02-11 15:21:35 [ERROR] Pipeline failed on step 3: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))
+2026-02-11 15:22:11 [INFO] Question: sdjndsdv
+2026-02-11 15:22:11 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:22:11 [INFO] Prompt ID: 3f8ebe48-547b-400a-8413-f50c839fe734
+2026-02-11 15:22:11 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:22:12 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:22:12 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:22:12 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:22:12 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 544
+  columns: 90
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943838756679314
+      - 1531943869925713052
+      - 1531943893972566509
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1183
+      - 1153
+      - 1504
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943924568083607
+      - 1531943941065119730
+      - 1531943898125155496
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - map
+      - map
+      - map
+    - name: field.child_frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.pose.pose.position.x
+      type: float64
+      samples:
+      - -185.452600129
+      - -222.997067385
+      - 130.610851512
+    - name: field.pose.pose.position.y
+      type: float64
+      samples:
+      - 120.725756129
+      - 22.4235909896
+      - 93.2527735725
+    - name: field.pose.pose.position.z
+      type: float64
+      samples:
+      - 50.546
+      - 50.116
+      - 49.683
+    - name: field.pose.pose.orientation.x
+      type: object
+      samples:
+      - '5703965497'
+      - '1929389352'
+      - '6030403907'
+    - name: field.pose.pose.orientation.y
+      type: object
+      samples:
+      - '5324730548'
+      - '8593335998'
+      - '3443062517'
+    - name: field.pose.pose.orientation.z
+      type: object
+      samples:
+      - '8001689804'
+      - '1316422820'
+      - '9244730162'
+    - name: field.pose.pose.orientation.w
+      type: object
+      samples:
+      - '6329738847'
+      - '4620437259'
+      - '1490446408'
+    - name: field.pose.covariance0
+      type: object
+      samples:
+      - '1463950945'
+      - '7061855989'
+      - '3422735998'
+    - name: field.pose.covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance4
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance7
+      type: object
+      samples:
+      - 0407116759
+      - '9662979934'
+      - '8981349222'
+    - name: field.pose.covariance8
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance9
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance10
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance11
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance12
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance13
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance14
+      type: object
+      samples:
+      - '9892553440'
+      - '8364226732'
+      - '8875549637'
+    - name: field.pose.covariance15
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance16
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance17
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance18
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance19
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance20
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance21
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.pose.covariance22
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance23
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance24
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance25
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance26
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance27
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance28
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.pose.covariance29
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance30
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance31
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance32
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance33
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance34
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.pose.covariance35
+      type: float64
+      samples:
+      - 99999.0
+      - 99999.0
+      - 99999.0
+    - name: field.twist.twist.linear.x
+      type: float64
+      samples:
+      - 12.19
+      - -2.91
+      - 10.49
+    - name: field.twist.twist.linear.y
+      type: float64
+      samples:
+      - -4.82
+      - 15.71
+      - -12.52
+    - name: field.twist.twist.linear.z
+      type: float64
+      samples:
+      - -0.44
+      - 0.0
+      - 2.17
+    - name: field.twist.twist.angular.x
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.twist.angular.y
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.twist.angular.z
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance0
+      type: float64
+      samples:
+      - -1.0
+      - -1.0
+      - -1.0
+    - name: field.twist.covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance4
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance8
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance9
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance10
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance11
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance12
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance13
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance14
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance15
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance16
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance17
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance18
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance19
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance20
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance21
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance22
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance23
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance24
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance25
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance26
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance27
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance28
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance29
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance30
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance31
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance32
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance33
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance34
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.covariance35
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ sdjndsdv
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:22:12 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:22:13 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)'))': /v1/chat/completions
+2026-02-11 15:22:14 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)'))': /v1/chat/completions
+2026-02-11 15:22:16 [ERROR] Pipeline failed on step 3: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))
+2026-02-11 15:25:32 [INFO] Question: oi
+2026-02-11 15:25:32 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:25:32 [INFO] Prompt ID: 247164cf-aad1-4490-b337-9a85f64a4fe2
+2026-02-11 15:25:32 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:25:32 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:25:32 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:25:32 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:25:32 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 662
+  columns: 19
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943934349894536
+      - 1531943876805135053
+      - 1531943895168245669
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1575
+      - 1705
+      - 1552
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943890765836620
+      - 1531943928132070303
+      - 1531943831161834768
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.status.status
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.status.service
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.latitude
+      type: float64
+      samples:
+      - 40.5928599
+      - 40.5928698
+      - 40.5917328
+    - name: field.longitude
+      type: float64
+      samples:
+      - -79.9007641
+      - -79.9007898
+      - -79.8967328
+    - name: field.altitude
+      type: float64
+      samples:
+      - 364.660978877
+      - 363.030897859
+      - 361.402184192
+    - name: field.position_covariance0
+      type: object
+      samples:
+      - '3107847042'
+      - '7289287715'
+      - '6290542198'
+    - name: field.position_covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance4
+      type: object
+      samples:
+      - '3290906874'
+      - 0544981388
+      - '1848628447'
+    - name: field.position_covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance8
+      type: object
+      samples:
+      - '4273813891'
+      - '8827117176'
+      - '9801539550'
+    - name: field.position_covariance_type
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ oi
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:25:32 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:25:33 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)'))': /v1/chat/completions
+2026-02-11 15:25:35 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)'))': /v1/chat/completions
+2026-02-11 15:25:36 [ERROR] Pipeline failed on step 3: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))
+2026-02-11 15:28:58 [INFO] Question: oi
+2026-02-11 15:28:58 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:28:58 [INFO] Prompt ID: 38ec2241-4511-4e5f-a45f-88d21b69cd5a
+2026-02-11 15:28:58 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:28:58 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:28:58 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:28:58 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:28:58 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 662
+  columns: 19
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943842342070558
+      - 1531943906943324405
+      - 1531943845741407855
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1584
+      - 1374
+      - 1335
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943811337205271
+      - 1531943883364606308
+      - 1531943855364659037
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.status.status
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.status.service
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.latitude
+      type: float64
+      samples:
+      - 40.5905469
+      - 40.5912496
+      - 40.5912821
+    - name: field.longitude
+      type: float64
+      samples:
+      - -79.8991897
+      - -79.8960114
+      - -79.8960635
+    - name: field.altitude
+      type: float64
+      samples:
+      - 363.732043695
+      - 365.122944787
+      - 360.774521252
+    - name: field.position_covariance0
+      type: object
+      samples:
+      - '2609693942'
+      - '8656962093'
+      - '4595101585'
+    - name: field.position_covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance4
+      type: object
+      samples:
+      - '6488836980'
+      - '5023566929'
+      - '2632735914'
+    - name: field.position_covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance8
+      type: object
+      samples:
+      - 0609362261
+      - '2871058928'
+      - '6582301747'
+    - name: field.position_covariance_type
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ oi
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:28:58 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:29:01 [INFO] error_code=insufficient_quota error_message='You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.' error_param=None error_type=insufficient_quota message='OpenAI API error received' stream_error=False
+2026-02-11 15:29:01 [ERROR] Pipeline failed on step 3: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2026-02-11 15:30:11 [INFO] Question: oi
+2026-02-11 15:30:11 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:30:11 [INFO] Prompt ID: 4800a983-7349-4788-a435-eaace883ccd6
+2026-02-11 15:30:11 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:30:11 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:30:11 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:30:11 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:30:11 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 662
+  columns: 10
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943812733337076
+      - 1531943852357790821
+      - 1531943865757738729
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1831
+      - 1456
+      - 1766
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943926732528156
+      - 1531943919341379451
+      - 1531943881168857164
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - map
+      - map
+      - map
+    - name: field.twist.linear.x
+      type: float64
+      samples:
+      - 17.429413571
+      - -16.5896844929
+      - 17.1139558151
+    - name: field.twist.linear.y
+      type: object
+      samples:
+      - '3524575137'
+      - '8606251298'
+      - '7133362896'
+    - name: field.twist.linear.z
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.angular.x
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.angular.y
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.twist.angular.z
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ oi
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:30:11 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:30:14 [INFO] error_code=insufficient_quota error_message='You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.' error_param=None error_type=insufficient_quota message='OpenAI API error received' stream_error=False
+2026-02-11 15:30:14 [ERROR] Pipeline failed on step 3: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2026-02-11 15:55:24 [INFO] Question: oi
+2026-02-11 15:55:24 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:55:24 [INFO] Prompt ID: 4ec250e4-58a7-40bc-a33a-e8a9161f6015
+2026-02-11 15:55:24 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:55:24 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:55:24 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:55:24 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:55:24 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 662
+  columns: 19
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943928344916208
+      - 1531943854343291712
+      - 1531943915342093586
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1439
+      - 1887
+      - 1601
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943870918376781
+      - 1531943930935315547
+      - 1531943899334076693
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.status.status
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.status.service
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.latitude
+      type: float64
+      samples:
+      - 40.5928293
+      - 40.5906103
+      - 40.5928646
+    - name: field.longitude
+      type: float64
+      samples:
+      - -79.9006253
+      - -79.8960836
+      - -79.898147
+    - name: field.altitude
+      type: float64
+      samples:
+      - 361.285818997
+      - 352.19452084
+      - 363.595914212
+    - name: field.position_covariance0
+      type: object
+      samples:
+      - '9885308125'
+      - '1699343256'
+      - '8382931642'
+    - name: field.position_covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance4
+      type: object
+      samples:
+      - '7713086711'
+      - '1197708057'
+      - '9442759912'
+    - name: field.position_covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance8
+      type: object
+      samples:
+      - '2899510803'
+      - '9050991141'
+      - '6278757645'
+    - name: field.position_covariance_type
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ oi
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:55:24 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:55:29 [INFO] Prompt used:
+            dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 662
+  columns: 19
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943928344916208
+      - 1531943854343291712
+      - 1531943915342093586
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1439
+      - 1887
+      - 1601
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943870918376781
+      - 1531943930935315547
+      - 1531943899334076693
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.status.status
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.status.service
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.latitude
+      type: float64
+      samples:
+      - 40.5928293
+      - 40.5906103
+      - 40.5928646
+    - name: field.longitude
+      type: float64
+      samples:
+      - -79.9006253
+      - -79.8960836
+      - -79.898147
+    - name: field.altitude
+      type: float64
+      samples:
+      - 361.285818997
+      - 352.19452084
+      - 363.595914212
+    - name: field.position_covariance0
+      type: object
+      samples:
+      - '9885308125'
+      - '1699343256'
+      - '8382931642'
+    - name: field.position_covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance4
+      type: object
+      samples:
+      - '7713086711'
+      - '1197708057'
+      - '9442759912'
+    - name: field.position_covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance8
+      type: object
+      samples:
+      - '2899510803'
+      - '9050991141'
+      - '6278757645'
+    - name: field.position_covariance_type
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ oi
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2026-02-11 15:55:29 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+result = {
+    "type": "string",
+    "value": "Hello, how can I assist you?"
+}
+            ```
+            
+2026-02-11 15:55:29 [INFO] Executing Step 4: CachePopulation
+2026-02-11 15:55:29 [INFO] Executing Step 5: CodeExecution
+2026-02-11 15:55:29 [INFO] 
+Code running:
+```
+result = {'type': 'string', 'value': 'Hello, how can I assist you?'}
+        ```
+2026-02-11 15:55:29 [INFO] Executing Step 6: ResultValidation
+2026-02-11 15:55:29 [INFO] Answer: {'type': 'string', 'value': 'Hello, how can I assist you?'}
+2026-02-11 15:55:29 [INFO] Executing Step 7: ResultParsing
+2026-02-11 15:55:43 [INFO] Question: como está
+2026-02-11 15:55:43 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:55:43 [INFO] Prompt ID: 8a175b1e-6dff-465a-a775-59dc06bd71d8
+2026-02-11 15:55:43 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:55:43 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:55:43 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:55:43 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:55:43 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 662
+  columns: 19
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943813935572100
+      - 1531943837542029606
+      - 1531943896744794129
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1842
+      - 1505
+      - 1444
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943883776966359
+      - 1531943926127965007
+      - 1531943811741930763
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.status.status
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.status.service
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.latitude
+      type: float64
+      samples:
+      - 40.5919267
+      - 40.5928642
+      - 40.5928095
+    - name: field.longitude
+      type: float64
+      samples:
+      - -79.8967082
+      - -79.8963109
+      - -79.8997575
+    - name: field.altitude
+      type: float64
+      samples:
+      - 363.77052615
+      - 361.581917198
+      - 364.693061109
+    - name: field.position_covariance0
+      type: object
+      samples:
+      - '2423589214'
+      - '4391463892'
+      - '3985172770'
+    - name: field.position_covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance4
+      type: object
+      samples:
+      - '6393733909'
+      - '6770282217'
+      - '9704772964'
+    - name: field.position_covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance8
+      type: object
+      samples:
+      - '7474062339'
+      - 0935246229
+      - 0196692277
+    - name: field.position_covariance_type
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ como está
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:55:43 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:55:46 [INFO] Prompt used:
+            dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 662
+  columns: 19
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943813935572100
+      - 1531943837542029606
+      - 1531943896744794129
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 1842
+      - 1505
+      - 1444
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943883776966359
+      - 1531943926127965007
+      - 1531943811741930763
+    - name: field.header.frame_id
+      type: object
+      samples:
+      - base_link
+      - base_link
+      - base_link
+    - name: field.status.status
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.status.service
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.latitude
+      type: float64
+      samples:
+      - 40.5919267
+      - 40.5928642
+      - 40.5928095
+    - name: field.longitude
+      type: float64
+      samples:
+      - -79.8967082
+      - -79.8963109
+      - -79.8997575
+    - name: field.altitude
+      type: float64
+      samples:
+      - 363.77052615
+      - 361.581917198
+      - 364.693061109
+    - name: field.position_covariance0
+      type: object
+      samples:
+      - '2423589214'
+      - '4391463892'
+      - '3985172770'
+    - name: field.position_covariance1
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance2
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance3
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance4
+      type: object
+      samples:
+      - '6393733909'
+      - '6770282217'
+      - '9704772964'
+    - name: field.position_covariance5
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance6
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance7
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.position_covariance8
+      type: object
+      samples:
+      - '7474062339'
+      - 0935246229
+      - 0196692277
+    - name: field.position_covariance_type
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ como está
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2026-02-11 15:55:46 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+result = {"type": "string", "value": "The data is a list of Pandas DataFrames with 662 rows and 19 columns."}
+            ```
+            
+2026-02-11 15:55:46 [INFO] Executing Step 4: CachePopulation
+2026-02-11 15:55:46 [INFO] Executing Step 5: CodeExecution
+2026-02-11 15:55:46 [INFO] 
+Code running:
+```
+result = {'type': 'string', 'value': 'The data is a list of Pandas DataFrames with 662 rows and 19 columns.'}
+        ```
+2026-02-11 15:55:46 [INFO] Executing Step 6: ResultValidation
+2026-02-11 15:55:46 [INFO] Answer: {'type': 'string', 'value': 'The data is a list of Pandas DataFrames with 662 rows and 19 columns.'}
+2026-02-11 15:55:46 [INFO] Executing Step 7: ResultParsing
+2026-02-11 15:59:01 [INFO] Question: Responda em português do Brasil. oi
+2026-02-11 15:59:01 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:59:01 [INFO] Prompt ID: d1f6d1e4-749b-4a92-9fc9-426a5d231d29
+2026-02-11 15:59:01 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:59:01 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:59:01 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:59:01 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:59:01 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 2692
+  columns: 16
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943852520103823
+      - 1531943836564226212
+      - 1531943906673070862
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 6541
+      - 7520
+      - 5138
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943887202937774
+      - 1531943902448357876
+      - 1531943866285550224
+    - name: field.header.frame_id
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.voltage
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.current
+      type: float64
+      samples:
+      - 0.00999999977648
+      - 0.00999999977648
+      - 0.00999999977648
+    - name: field.charge
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.design_capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.percentage
+      type: float64
+      samples:
+      - -0.00999999977648
+      - -0.00999999977648
+      - -0.00999999977648
+    - name: field.power_supply_status
+      type: int64
+      samples:
+      - 2
+      - 2
+      - 2
+    - name: field.power_supply_health
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.power_supply_technology
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.present
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.location
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.serial_number
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Responda em português do Brasil. oi
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:59:01 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:59:05 [INFO] Prompt used:
+            dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 2692
+  columns: 16
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943852520103823
+      - 1531943836564226212
+      - 1531943906673070862
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 6541
+      - 7520
+      - 5138
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943887202937774
+      - 1531943902448357876
+      - 1531943866285550224
+    - name: field.header.frame_id
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.voltage
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.current
+      type: float64
+      samples:
+      - 0.00999999977648
+      - 0.00999999977648
+      - 0.00999999977648
+    - name: field.charge
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.design_capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.percentage
+      type: float64
+      samples:
+      - -0.00999999977648
+      - -0.00999999977648
+      - -0.00999999977648
+    - name: field.power_supply_status
+      type: int64
+      samples:
+      - 2
+      - 2
+      - 2
+    - name: field.power_supply_health
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.power_supply_technology
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.present
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.location
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.serial_number
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Responda em português do Brasil. oi
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2026-02-11 15:59:05 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+result = {
+    "type": "string",
+    "value": "oi"
+}
+            ```
+            
+2026-02-11 15:59:05 [INFO] Executing Step 4: CachePopulation
+2026-02-11 15:59:05 [INFO] Executing Step 5: CodeExecution
+2026-02-11 15:59:05 [INFO] 
+Code running:
+```
+result = {'type': 'string', 'value': 'oi'}
+        ```
+2026-02-11 15:59:05 [INFO] Executing Step 6: ResultValidation
+2026-02-11 15:59:05 [INFO] Answer: {'type': 'string', 'value': 'oi'}
+2026-02-11 15:59:05 [INFO] Executing Step 7: ResultParsing
+2026-02-11 15:59:10 [INFO] Question: Responda em português do Brasil. tudo bem ?
+2026-02-11 15:59:10 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:59:10 [INFO] Prompt ID: 20f5a7b3-386d-439c-a180-77fc52a3ec12
+2026-02-11 15:59:10 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:59:10 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:59:10 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:59:10 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:59:10 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 2692
+  columns: 16
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943822533332424
+      - 1531943824535676389
+      - 1531943840492685375
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 6653
+      - 5314
+      - 6769
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943811076054555
+      - 1531943913800876477
+      - 1531943889804184796
+    - name: field.header.frame_id
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.voltage
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.current
+      type: float64
+      samples:
+      - 0.00999999977648
+      - 0.00999999977648
+      - 0.00999999977648
+    - name: field.charge
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.design_capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.percentage
+      type: float64
+      samples:
+      - -0.00999999977648
+      - -0.00999999977648
+      - -0.00999999977648
+    - name: field.power_supply_status
+      type: int64
+      samples:
+      - 2
+      - 2
+      - 2
+    - name: field.power_supply_health
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.power_supply_technology
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.present
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.location
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.serial_number
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Responda em português do Brasil. tudo bem ?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:59:10 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:59:14 [INFO] Prompt used:
+            dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 2692
+  columns: 16
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943822533332424
+      - 1531943824535676389
+      - 1531943840492685375
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 6653
+      - 5314
+      - 6769
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943811076054555
+      - 1531943913800876477
+      - 1531943889804184796
+    - name: field.header.frame_id
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.voltage
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.current
+      type: float64
+      samples:
+      - 0.00999999977648
+      - 0.00999999977648
+      - 0.00999999977648
+    - name: field.charge
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.design_capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.percentage
+      type: float64
+      samples:
+      - -0.00999999977648
+      - -0.00999999977648
+      - -0.00999999977648
+    - name: field.power_supply_status
+      type: int64
+      samples:
+      - 2
+      - 2
+      - 2
+    - name: field.power_supply_health
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.power_supply_technology
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.present
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.location
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.serial_number
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Responda em português do Brasil. tudo bem ?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2026-02-11 15:59:14 [INFO] Code generated:
+            ```
+            # TODO: importar as dependências necessárias
+import pandas as pd
+
+# Write code here
+result = {
+    "type": "dataframe",
+    "value": dfs[0]
+}
+            ```
+            
+2026-02-11 15:59:14 [INFO] Executing Step 4: CachePopulation
+2026-02-11 15:59:14 [INFO] Executing Step 5: CodeExecution
+2026-02-11 15:59:14 [INFO] 
+Code running:
+```
+result = {'type': 'dataframe', 'value': dfs[0]}
+        ```
+2026-02-11 15:59:14 [INFO] Executing Step 6: ResultValidation
+2026-02-11 15:59:14 [INFO] Answer: {'type': 'dataframe', 'value':                     %time  field.header.seq  ...  field.location  field.serial_number
+0     1531943810865355999              4830  ...             NaN                  NaN
+1     1531943810892893375              4831  ...             NaN                  NaN
+2     1531943810925447679              4832  ...             NaN                  NaN
+3     1531943810975442079              4833  ...             NaN                  NaN
+4     1531943811013803861              4834  ...             NaN                  NaN
+...                   ...               ...  ...             ...                  ...
+2687  1531943943004917953              7517  ...             NaN                  NaN
+2688  1531943943072804829              7518  ...             NaN                  NaN
+2689  1531943943096639012              7519  ...             NaN                  NaN
+2690  1531943943144658927              7520  ...             NaN                  NaN
+2691  1531943943198511197              7521  ...             NaN                  NaN
+
+[2692 rows x 16 columns]}
+2026-02-11 15:59:14 [INFO] Executing Step 7: ResultParsing
+2026-02-11 15:59:31 [INFO] Question: Responda em português do Brasil. quantas colunas tenho ?
+2026-02-11 15:59:31 [INFO] Running PandasAI with openai LLM...
+2026-02-11 15:59:31 [INFO] Prompt ID: ce3a87c7-2111-45ed-8e20-3fb342166d1a
+2026-02-11 15:59:31 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 15:59:31 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 15:59:31 [INFO] Executing Step 1: CacheLookup
+2026-02-11 15:59:31 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 15:59:31 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 2692
+  columns: 16
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943849771477848
+      - 1531943841687661511
+      - 1531943904582245800
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 6829
+      - 7283
+      - 5056
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943896792106184
+      - 1531943829035487546
+      - 1531943908014606283
+    - name: field.header.frame_id
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.voltage
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.current
+      type: float64
+      samples:
+      - 0.00999999977648
+      - 0.00999999977648
+      - 0.00999999977648
+    - name: field.charge
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.design_capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.percentage
+      type: float64
+      samples:
+      - -0.00999999977648
+      - -0.00999999977648
+      - -0.00999999977648
+    - name: field.power_supply_status
+      type: int64
+      samples:
+      - 2
+      - 2
+      - 2
+    - name: field.power_supply_health
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.power_supply_technology
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.present
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.location
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.serial_number
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Responda em português do Brasil. quantas colunas tenho ?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 15:59:31 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 15:59:35 [INFO] Prompt used:
+            dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 2692
+  columns: 16
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943849771477848
+      - 1531943841687661511
+      - 1531943904582245800
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 6829
+      - 7283
+      - 5056
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943896792106184
+      - 1531943829035487546
+      - 1531943908014606283
+    - name: field.header.frame_id
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.voltage
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.current
+      type: float64
+      samples:
+      - 0.00999999977648
+      - 0.00999999977648
+      - 0.00999999977648
+    - name: field.charge
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.design_capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.percentage
+      type: float64
+      samples:
+      - -0.00999999977648
+      - -0.00999999977648
+      - -0.00999999977648
+    - name: field.power_supply_status
+      type: int64
+      samples:
+      - 2
+      - 2
+      - 2
+    - name: field.power_supply_health
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.power_supply_technology
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.present
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.location
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.serial_number
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Responda em português do Brasil. quantas colunas tenho ?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2026-02-11 15:59:35 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+result = {"type": "number", "value": 16}
+            ```
+            
+2026-02-11 15:59:35 [INFO] Executing Step 4: CachePopulation
+2026-02-11 15:59:35 [INFO] Executing Step 5: CodeExecution
+2026-02-11 15:59:35 [INFO] 
+Code running:
+```
+result = {'type': 'number', 'value': 16}
+        ```
+2026-02-11 15:59:35 [INFO] Executing Step 6: ResultValidation
+2026-02-11 15:59:35 [INFO] Answer: {'type': 'number', 'value': 16}
+2026-02-11 15:59:35 [INFO] Executing Step 7: ResultParsing
+2026-02-11 16:00:09 [INFO] Question: Responda em português do Brasil. o que pode plotar sobre o csv ?
+2026-02-11 16:00:09 [INFO] Running PandasAI with openai LLM...
+2026-02-11 16:00:09 [INFO] Prompt ID: c408e9d8-ac3a-4ca3-a0af-ae6dc1fb85c7
+2026-02-11 16:00:09 [INFO] Executing Pipeline: GenerateChatPipeline
+2026-02-11 16:00:09 [INFO] Executing Step 0: ValidatePipelineInput
+2026-02-11 16:00:09 [INFO] Executing Step 1: CacheLookup
+2026-02-11 16:00:09 [INFO] Executing Step 2: PromptGeneration
+2026-02-11 16:00:09 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 2692
+  columns: 16
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943887783857445
+      - 1531943883326540782
+      - 1531943846406111911
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 5669
+      - 7425
+      - 7149
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943861854957680
+      - 1531943855439197876
+      - 1531943835059674194
+    - name: field.header.frame_id
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.voltage
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.current
+      type: float64
+      samples:
+      - 0.00999999977648
+      - 0.00999999977648
+      - 0.00999999977648
+    - name: field.charge
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.design_capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.percentage
+      type: float64
+      samples:
+      - -0.00999999977648
+      - -0.00999999977648
+      - -0.00999999977648
+    - name: field.power_supply_status
+      type: int64
+      samples:
+      - 2
+      - 2
+      - 2
+    - name: field.power_supply_health
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.power_supply_technology
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.present
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.location
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.serial_number
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Responda em português do Brasil. o que pode plotar sobre o csv ?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2026-02-11 16:00:09 [INFO] Executing Step 3: CodeGenerator
+2026-02-11 16:00:12 [INFO] Prompt used:
+            dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 2692
+  columns: 16
+  schema:
+    fields:
+    - name: '%time'
+      type: int64
+      samples:
+      - 1531943887783857445
+      - 1531943883326540782
+      - 1531943846406111911
+    - name: field.header.seq
+      type: int64
+      samples:
+      - 5669
+      - 7425
+      - 7149
+    - name: field.header.stamp
+      type: int64
+      samples:
+      - 1531943861854957680
+      - 1531943855439197876
+      - 1531943835059674194
+    - name: field.header.frame_id
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.voltage
+      type: float64
+      samples:
+      - 0.0
+      - 0.0
+      - 0.0
+    - name: field.current
+      type: float64
+      samples:
+      - 0.00999999977648
+      - 0.00999999977648
+      - 0.00999999977648
+    - name: field.charge
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.design_capacity
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.percentage
+      type: float64
+      samples:
+      - -0.00999999977648
+      - -0.00999999977648
+      - -0.00999999977648
+    - name: field.power_supply_status
+      type: int64
+      samples:
+      - 2
+      - 2
+      - 2
+    - name: field.power_supply_health
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.power_supply_technology
+      type: int64
+      samples:
+      - 0
+      - 0
+      - 0
+    - name: field.present
+      type: int64
+      samples:
+      - 1
+      - 1
+      - 1
+    - name: field.location
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+    - name: field.serial_number
+      type: float64
+      samples:
+      - .nan
+      - .nan
+      - .nan
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Responda em português do Brasil. o que pode plotar sobre o csv ?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2026-02-11 16:00:12 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Write code here
+# Plotando um gráfico de linha para visualizar a variação da coluna 'field.current' ao longo do tempo
+plt.figure(figsize=(12, 6))
+for df in dfs:
+    plt.plot(df['%time'], df['field.current'], label='field.current')
+plt.xlabel('%time')
+plt.ylabel('field.current')
+plt.title('Variação de field.current ao longo do tempo')
+plt.legend()
+plt.grid(True)
+plt.savefig('field_current_chart.png')
+
+# Declare result var: 
+result = { "type": "plot", "value": "field_current_chart.png" }
+            ```
+            
+2026-02-11 16:00:12 [INFO] Executing Step 4: CachePopulation
+2026-02-11 16:00:12 [INFO] Executing Step 5: CodeExecution
+2026-02-11 16:00:12 [INFO] Saving charts to C:\Users\vfide\Desktop\ProjetoIA\exports\charts\temp_chart.png
+2026-02-11 16:00:12 [INFO] 
+Code running:
+```
+plt.figure(figsize=(12, 6))
+for df in dfs:
+    plt.plot(df['%time'], df['field.current'], label='field.current')
+plt.xlabel('%time')
+plt.ylabel('field.current')
+plt.title('Variação de field.current ao longo do tempo')
+plt.legend()
+plt.grid(True)
+plt.savefig('C:/Users/vfide/Desktop/ProjetoIA/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Users/vfide/Desktop/ProjetoIA/exports/charts/temp_chart.png'}
+        ```
+2026-02-11 16:00:18 [INFO] generated new fontManager
+2026-02-11 16:00:20 [INFO] Executing Step 6: ResultValidation
+2026-02-11 16:00:20 [INFO] Answer: {'type': 'plot', 'value': 'C:/Users/vfide/Desktop/ProjetoIA/exports/charts/temp_chart.png'}
+2026-02-11 16:00:20 [INFO] Executing Step 7: ResultParsing
