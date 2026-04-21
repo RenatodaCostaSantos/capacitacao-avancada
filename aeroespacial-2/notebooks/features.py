@@ -54,7 +54,6 @@ def derive_features(df):
     if all(c in df for c in ['gyro_x', 'gyro_y']):
         df['gyro_xy'] = np.sqrt(df['gyro_x']**2 + df['gyro_y']**2)
 
-    # rc0 is typically constant (throttle); skip rc0_diff (zero variance in practice).
     for col in [
         'vel', 'roll', 'pitch', 'yaw',
         'acc_x', 'acc_y', 'acc_z',
