@@ -21,4 +21,4 @@ def main(*args, **kwargs) -> Any:
 
 
 if __name__ == "__main__":
-    main()
+    test_alfa_pipeline()
