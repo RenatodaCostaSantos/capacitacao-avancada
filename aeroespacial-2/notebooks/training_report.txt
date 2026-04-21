@@ -1,0 +1,137 @@
+RELATÓRIO DE TREINAMENTO DE MODELOS
+==================================================
+
+Data/Hora: 2026-04-21 16:20:10
+Total de voos: 23
+Tamanho da janela: 20
+Threshold: 0.3
+Grid Search: Sim
+
+RESULTADOS POR MODELO:
+--------------------------------------------------
+
+Modelo: RandomForest
+--------------------
+Classe 0 (Normal):
+  Precision: 0.9910
+  Recall:    0.9542
+  F1-Score:  0.9722
+  Support:   1725
+Classe 1 (Falha):
+  Precision: 0.7899
+  Recall:    0.9519
+  F1-Score:  0.8634
+  Support:   312
+ROC AUC:     0.9814
+Matriz de Confusão:
+  [[1646, 79],
+   [15, 297]]
+
+
+Modelo: HistGradientBoosting
+--------------------
+Classe 0 (Normal):
+  Precision: 0.9888
+  Recall:    0.9739
+  F1-Score:  0.9813
+  Support:   1725
+Classe 1 (Falha):
+  Precision: 0.8669
+  Recall:    0.9391
+  F1-Score:  0.9015
+  Support:   312
+ROC AUC:     0.9830
+Matriz de Confusão:
+  [[1680, 45],
+   [19, 293]]
+
+
+Modelo: LogisticRegression
+--------------------
+Classe 0 (Normal):
+  Precision: 0.9921
+  Recall:    0.9519
+  F1-Score:  0.9716
+  Support:   1725
+Classe 1 (Falha):
+  Precision: 0.7827
+  Recall:    0.9583
+  F1-Score:  0.8617
+  Support:   312
+ROC AUC:     0.9796
+Matriz de Confusão:
+  [[1642, 83],
+   [13, 299]]
+
+
+Modelo: LinearSVM
+--------------------
+Classe 0 (Normal):
+  Precision: 0.9601
+  Recall:    0.9762
+  F1-Score:  0.9681
+  Support:   1725
+Classe 1 (Falha):
+  Precision: 0.8551
+  Recall:    0.7756
+  F1-Score:  0.8134
+  Support:   312
+ROC AUC:     0.9705
+Matriz de Confusão:
+  [[1684, 41],
+   [70, 242]]
+
+
+Modelo: MLP
+--------------------
+Classe 0 (Normal):
+  Precision: 0.9790
+  Recall:    0.9710
+  F1-Score:  0.9750
+  Support:   1725
+Classe 1 (Falha):
+  Precision: 0.8466
+  Recall:    0.8846
+  F1-Score:  0.8652
+  Support:   312
+ROC AUC:     0.9787
+Matriz de Confusão:
+  [[1675, 50],
+   [36, 276]]
+
+
+Modelo: XGBoost
+--------------------
+Classe 0 (Normal):
+  Precision: 0.9918
+  Recall:    0.9786
+  F1-Score:  0.9851
+  Support:   1725
+Classe 1 (Falha):
+  Precision: 0.8896
+  Recall:    0.9551
+  F1-Score:  0.9212
+  Support:   312
+ROC AUC:     0.9838
+Matriz de Confusão:
+  [[1688, 37],
+   [14, 298]]
+
+
+Modelo: LightGBM
+--------------------
+Classe 0 (Normal):
+  Precision: 0.9918
+  Recall:    0.9832
+  F1-Score:  0.9875
+  Support:   1725
+Classe 1 (Falha):
+  Precision: 0.9113
+  Recall:    0.9551
+  F1-Score:  0.9327
+  Support:   312
+ROC AUC:     0.9850
+Matriz de Confusão:
+  [[1696, 29],
+   [14, 298]]
+
